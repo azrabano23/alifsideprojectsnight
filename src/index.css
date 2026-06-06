@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-color: #F7F3EC;
+  color: #1B1F3B;
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  font-feature-settings: 'ss01', 'cv02', 'cv11';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display {
+  font-family: 'Fraunces', 'Spectral', Georgia, serif;
+  font-feature-settings: 'ss01', 'ss03';
+  font-optical-sizing: auto;
+}
+
+.almanac-rule {
+  background-image: linear-gradient(to right, transparent, #1B1F3B33 12%, #1B1F3B33 88%, transparent);
+  height: 1px;
+}
+
+.engraved {
+  text-shadow: 0 1px 0 rgba(247, 243, 236, 0.5);
+}
+
+.hairline {
+  box-shadow: inset 0 0 0 1px rgba(27, 31, 59, 0.12);
+}
+
+/* Custom slider styling */
+input[type='range'].fitra-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  height: 28px;
+  width: 100%;
+  cursor: pointer;
+}
+input[type='range'].fitra-slider::-webkit-slider-runnable-track {
+  height: 2px;
+  background: linear-gradient(to right, #1B1F3B22 0%, #1B1F3B22 100%);
+  border-radius: 999px;
+}
+input[type='range'].fitra-slider::-moz-range-track {
+  height: 2px;
+  background: #1B1F3B22;
+  border-radius: 999px;
+}
+input[type='range'].fitra-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 22px;
+  width: 22px;
+  border-radius: 999px;
+  background: #F7F3EC;
+  border: 1.5px solid #1B1F3B;
+  margin-top: -10px;
+  box-shadow: 0 1px 2px rgba(27, 31, 59, 0.15);
+  transition: transform 120ms ease;
+}
+input[type='range'].fitra-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.06);
+}
+input[type='range'].fitra-slider::-moz-range-thumb {
+  height: 22px;
+  width: 22px;
+  border-radius: 999px;
+  background: #F7F3EC;
+  border: 1.5px solid #1B1F3B;
+  box-shadow: 0 1px 2px rgba(27, 31, 59, 0.15);
+}
+
+::selection { background: #C8923D33; color: #1B1F3B; }
